@@ -1,0 +1,75 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javaScript" src="./eventHtml.js">
+
+
+      function onClick()
+      {
+          alert("on click event triggered");
+      }
+      function onMouseHover()
+      {
+          alert("on mouse hover event triggered");
+      }
+      function onMouseOut()
+      {
+          alert("on mouse out event triggered");
+      }
+
+      function KeyboardEvent()
+      {
+          alert("key board event triggered");
+      }
+      function onLoadEvent() {
+          alert("page load event triggered");
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="button"
+      value="click me"
+      style="width: 400px; height: 40px"
+      onclick="onClick()"
+    />
+    <br />
+
+    <input
+      type="button"
+      value="click me"
+      style="width: 400px; height: 40px; margin-top: 10px"
+      ;
+      onclick="onMouseHover()"
+    />
+    <br />
+    <input
+      type="button"
+      value="click me"
+      style="width: 400px; height: 40px"
+      onclick="onMouseOut()"
+    />
+    <br />
+    <input
+      type="text"
+      value=""
+      style="width: 400px; height: 40px"
+      onclick="KeyboardEvent()"
+    />
+    <br />
+    <input type="button" value="click me" style="width: 400px; height: 40px" />
+    <br />
+    <input
+      type="text"
+      value="click me"
+      style="width: 400px; height: 40px"
+      onclick="onLoadEvent()"
+    />
+    <br />
+  </body>
+</html>
